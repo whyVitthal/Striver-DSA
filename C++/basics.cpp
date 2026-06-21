@@ -4,7 +4,7 @@ int main()
 {
     int x;
     cin>>x;
-    cout<<"Hello"<< x+2;
+    cout<<"Hello"<< x+2; 
 
 
     // string s1 , s2;
