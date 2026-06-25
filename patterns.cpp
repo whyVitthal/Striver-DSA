@@ -60,6 +60,29 @@ void print5(int n){
         cout<<endl;
     }
 }
+void print6(int n){
+    int i,j;
+    for(i=1;i<=n;i++)
+    {
+        for(j=n;j>=i;j--)
+        {
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
+}
+void print7(int n){
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=1;j<=n-i;j++)
+        {
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
+}
+
 
 // backend of an online compiler 
 int main()
@@ -70,7 +93,7 @@ int main()
     {   
     int n;
     cin>>n;
-    print5(n);
+    print7(n);
     }
     return 0;
 }
