@@ -82,7 +82,60 @@ void print7(int n){
         cout<<endl;
     }
 }
+void print8(int n){
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+       for(j=0;j<n-i-1;j++)
+       {
+           cout<<" "; //space print krne k liye
+       }
+       for(j=0;j<2*i+1;j++)
+       {
+           cout<<"*"; //star print krne k liye
+       }
+       for(j=0;j<n-i-1;j++)
+       {
+           cout<<" "; //space print krne k liye
+       }
+         cout<<endl;
+    }
+}
+void print9(int n){
 
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+       for(j=0;j<i;j++)
+       {
+           cout<<" "; //space print krne k liye
+       }
+       for(j=0;j<2*n-2*i-1;j++)
+       {
+           cout<<"*"; //star print krne k liye
+       }
+       for(j=0;j<i;j++)
+       {
+           cout<<" "; //space print krne k liye
+       }
+         cout<<endl;
+    }
+  
+}
+
+//for pattern 9 in sde sheet comcine both of them
+
+void print10(int n){
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        
+    }
+
+
+
+
+}
 
 // backend of an online compiler 
 int main()
@@ -93,7 +146,9 @@ int main()
     {   
     int n;
     cin>>n;
-    print7(n);
+    // print8(n);
+    // print9(n);
+    print10(n);
     }
     return 0;
 }
