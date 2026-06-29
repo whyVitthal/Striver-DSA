@@ -127,15 +127,39 @@ void print9(int n){
 
 void print10(int n){
     int i,j;
-    for(i=0;i<n;i++)
-    {
-        
+    for(i=1;i<=2*n-1;i++){
+        int stars = i;
+        if ( i > n) {
+            stars = 2*n - i;
+        }
+        for(j=1; j<=stars; j++){
+            cout<<"*";
+        }
+        cout<<endl;
     }
-
-
-
-
 }
+void print11(int n){
+    int i,j;
+    for(i=1;i<=n;i++){
+        int start=1;
+        if (i%2==0){
+            start = 1;
+        } else {
+            start = 0;
+        }
+
+        for(j=1;j<=i;j++){
+            cout<<start<<" ";
+            start = 1 - start; // Toggle between 0 and 1
+        }
+        cout<<endl;
+    }
+}
+
+
+
+
+
 
 // backend of an online compiler 
 int main()
@@ -148,7 +172,7 @@ int main()
     cin>>n;
     // print8(n);
     // print9(n);
-    print10(n);
+    print11(n);
     }
     return 0;
 }
